@@ -1,21 +1,22 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Desktop/lab07/EXT_testbench_isim_beh.exe -prj /home/student/Desktop/lab07/EXT_testbench_beh.prj work.EXT_testbench 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Desktop/lab07/ADD1_testbench_isim_beh.exe -prj /home/student/Desktop/lab07/ADD1_testbench_beh.prj work.ADD1_testbench 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/student/Desktop/lab07/EXT.vhd" into library work
-Parsing VHDL file "/home/student/Desktop/lab07/EXT_testbench.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ADD1.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ADD1_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 37168 KB
-Fuse CPU Usage: 1480 ms
+Fuse Memory Usage: 37928 KB
+Fuse CPU Usage: 1580 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity EXT [ext_default]
-Compiling architecture behavior of entity ext_testbench
+Compiling package numeric_std
+Compiling architecture behavioral of entity ADD1 [add1_default]
+Compiling architecture behavior of entity add1_testbench
 Time Resolution for simulation is 1ps.
-Compiled 5 VHDL Units
-Built simulation executable /home/student/Desktop/lab07/EXT_testbench_isim_beh.exe
-Fuse Memory Usage: 44732 KB
-Fuse CPU Usage: 1500 ms
-GCC CPU Usage: 200 ms
+Compiled 6 VHDL Units
+Built simulation executable /home/student/Desktop/lab07/ADD1_testbench_isim_beh.exe
+Fuse Memory Usage: 50340 KB
+Fuse CPU Usage: 1670 ms
+GCC CPU Usage: 190 ms
