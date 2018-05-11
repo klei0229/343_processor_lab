@@ -29,18 +29,22 @@
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ADD1_testbench_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DEC.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="EXT_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX32_testbench_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX32_testbench_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="MUX32_testbench_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MUX5_testbench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1526073738" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1526073738">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526075985" xil_pn:in_ck="-5328611626554040524" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526075985">
+    <transform xil_pn:end_ts="1526078914" xil_pn:in_ck="8285366677598415136" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1526078914">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ACU.vhd"/>
@@ -53,7 +57,9 @@
       <outfile xil_pn:name="EXT_testbench.vhd"/>
       <outfile xil_pn:name="FSM.vhd"/>
       <outfile xil_pn:name="MUX32.vhd"/>
+      <outfile xil_pn:name="MUX32_testbench.vhd"/>
       <outfile xil_pn:name="MUX5.vhd"/>
+      <outfile xil_pn:name="MUX5_testbench.vhd"/>
       <outfile xil_pn:name="PC.vhd"/>
       <outfile xil_pn:name="RAM.vhd"/>
       <outfile xil_pn:name="RAM_Test.vhd"/>
@@ -62,11 +68,11 @@
       <outfile xil_pn:name="ROM.vhd"/>
       <outfile xil_pn:name="ROM_Test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1526076060" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1238787446220480817" xil_pn:start_ts="1526076060">
+    <transform xil_pn:end_ts="1526078843" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8841971915934573708" xil_pn:start_ts="1526078843">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526076060" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4000159318147507411" xil_pn:start_ts="1526076060">
+    <transform xil_pn:end_ts="1526078843" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4833815731386791762" xil_pn:start_ts="1526078843">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -74,7 +80,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1526075985" xil_pn:in_ck="-5328611626554040524" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526075985">
+    <transform xil_pn:end_ts="1526078914" xil_pn:in_ck="8285366677598415136" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1526078914">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ACU.vhd"/>
@@ -87,7 +93,9 @@
       <outfile xil_pn:name="EXT_testbench.vhd"/>
       <outfile xil_pn:name="FSM.vhd"/>
       <outfile xil_pn:name="MUX32.vhd"/>
+      <outfile xil_pn:name="MUX32_testbench.vhd"/>
       <outfile xil_pn:name="MUX5.vhd"/>
+      <outfile xil_pn:name="MUX5_testbench.vhd"/>
       <outfile xil_pn:name="PC.vhd"/>
       <outfile xil_pn:name="RAM.vhd"/>
       <outfile xil_pn:name="RAM_Test.vhd"/>
@@ -96,22 +104,20 @@
       <outfile xil_pn:name="ROM.vhd"/>
       <outfile xil_pn:name="ROM_Test.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1526076067" xil_pn:in_ck="-5328611626554040524" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-8198217146562244978" xil_pn:start_ts="1526076060">
+    <transform xil_pn:end_ts="1526078920" xil_pn:in_ck="8285366677598415136" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="2814103860087100568" xil_pn:start_ts="1526078914">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ADD1_testbench_beh.prj"/>
-      <outfile xil_pn:name="ADD1_testbench_isim_beh.exe"/>
+      <outfile xil_pn:name="MUX32_testbench_beh.prj"/>
+      <outfile xil_pn:name="MUX32_testbench_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1526076068" xil_pn:in_ck="4022421173546958096" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7269550976889293893" xil_pn:start_ts="1526076067">
+    <transform xil_pn:end_ts="1526078921" xil_pn:in_ck="-6041673989714097094" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1571375173427422587" xil_pn:start_ts="1526078920">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="ADD1_testbench_isim_beh.wdb"/>
+      <outfile xil_pn:name="MUX32_testbench_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
   </transforms>
 

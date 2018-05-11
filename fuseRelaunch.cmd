@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "secureip" -o "/home/student/Desktop/lab07/ADD1_testbench_isim_beh.exe" -prj "/home/student/Desktop/lab07/ADD1_testbench_beh.prj" "work.ADD1_testbench" 
+-intstyle "ise" -incremental -lib "secureip" -o "/home/student/Desktop/lab07/MUX32_testbench_isim_beh.exe" -prj "/home/student/Desktop/lab07/MUX32_testbench_beh.prj" "work.MUX32_testbench" 
