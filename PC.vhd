@@ -38,7 +38,13 @@ end PC;
 architecture Behavioral of PC is
 
 begin
-
-
+	--PC Module is to update the value of O_PC as I_PC when I_PC_UPDATE is 1
+	
+	process(I_PC_UPDATE)
+	begin
+	if I_PC_UPDATE = '1' then O_PC <= I_PC;
+	
+	end if;
+	end process;
 end Behavioral;
 
