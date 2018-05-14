@@ -1,21 +1,23 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Desktop/lab07/PC_testbench_isim_beh.exe -prj /home/student/Desktop/lab07/PC_testbench_beh.prj work.PC_testbench 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Desktop/lab07/alu_testbench_isim_beh.exe -prj /home/student/Desktop/lab07/alu_testbench_beh.prj work.alu_testbench 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/student/Desktop/lab07/PC.vhd" into library work
-Parsing VHDL file "/home/student/Desktop/lab07/PC_testbench.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ALU.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/alu_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 37168 KB
-Fuse CPU Usage: 1470 ms
+Fuse Memory Usage: 37780 KB
+Fuse CPU Usage: 1740 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling architecture behavioral of entity PC [pc_default]
-Compiling architecture behavior of entity pc_testbench
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavior of entity alu_testbench
 Time Resolution for simulation is 1ps.
-Compiled 5 VHDL Units
-Built simulation executable /home/student/Desktop/lab07/PC_testbench_isim_beh.exe
-Fuse Memory Usage: 44732 KB
-Fuse CPU Usage: 1490 ms
-GCC CPU Usage: 180 ms
+Compiled 7 VHDL Units
+Built simulation executable /home/student/Desktop/lab07/alu_testbench_isim_beh.exe
+Fuse Memory Usage: 50852 KB
+Fuse CPU Usage: 1810 ms
+GCC CPU Usage: 2330 ms
