@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+use ieee.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -36,8 +38,16 @@ entity ADD2 is
 end ADD2;
 
 architecture Behavioral of ADD2 is
-
+	signal I_ADD2_B_lshifted : STD_LOGIC_VECTOR(31 downto 0);
 begin
+	--first shift I_ADD2_B to the left by 2 bits into a signal I_ADD_2_lshifted
+	--then add the result to I_ADD2_A
+	
+	I_ADD2_B_lshifted <= STD_LOGIC_VECTOR(shift_left(unsigned(I_ADD2_B),2));
+	--O_ADD2_Out <= STD_LOGIC_VECTOR(unsigned(I_ADD2_A) + unsigned(I_ADD2_B_lshifted);
+	O_ADD2_Out <= I_ADD2_A + I_ADD2_B_lshifted;
+	
+
 
 
 end Behavioral;
