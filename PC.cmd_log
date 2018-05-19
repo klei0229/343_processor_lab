@@ -1,0 +1,2 @@
+vhdtdtfi -lib work PC.vhd -prj lab07 -o PC.spl -module PC -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w PC.spl /home/student/Desktop/lab07/PC.sym 

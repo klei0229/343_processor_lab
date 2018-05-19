@@ -37,13 +37,19 @@ end PC;
 
 architecture Behavioral of PC is
 
+signal is_initial: boolean := true;
+
 begin
 	--PC Module is to update the value of O_PC as I_PC when I_PC_UPDATE is 1
-	
-	process(I_PC_UPDATE)
+	process(I_PC_UPDATE,is_initial)
 	begin
-	if I_PC_UPDATE = '1' then O_PC <= I_PC;
-	
+	if is_initial = true then
+		O_PC <= X"00000000"; 
+		is_initial <= false;
+	else 
+	 if I_PC_UPDATE = '1' then
+		O_PC <= I_PC;
+		end if;
 	end if;
 	end process;
 end Behavioral;

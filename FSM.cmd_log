@@ -1,0 +1,2 @@
+vhdtdtfi -lib work FSM.vhd -prj lab07 -o FSM.spl -module FSM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w FSM.spl /home/student/Desktop/lab07/FSM.sym 

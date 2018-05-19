@@ -1,0 +1,2 @@
+vhdtdtfi -lib work shift_2.vhd -prj lab07 -o shift_2.spl -module shift_2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w shift_2.spl /home/student/Desktop/lab07/shift_2.sym 

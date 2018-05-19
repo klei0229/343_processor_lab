@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ADD2.vhd -prj lab07 -o ADD2.spl -module ADD2 -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w ADD2.spl /home/student/Desktop/lab07/ADD2.sym 

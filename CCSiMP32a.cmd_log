@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family artix7 -w -refsym CCSiMP32a /home/student/Desktop/lab07/CCSiMP32a.sch /home/student/Desktop/lab07/CCSiMP32a.sym 

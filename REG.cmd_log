@@ -1,0 +1,2 @@
+vhdtdtfi -lib work REG.vhd -prj lab07 -o REG.spl -module REG -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w REG.spl /home/student/Desktop/lab07/REG.sym 

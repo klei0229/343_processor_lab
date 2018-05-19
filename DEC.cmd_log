@@ -1,0 +1,2 @@
+vhdtdtfi -lib work DEC.vhd -prj lab07 -o DEC.spl -module DEC -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w DEC.spl /home/student/Desktop/lab07/DEC.sym 

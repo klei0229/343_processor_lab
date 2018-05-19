@@ -1,24 +1,57 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Desktop/lab07/ADD2_testbench_isim_beh.exe -prj /home/student/Desktop/lab07/ADD2_testbench_beh.prj work.ADD2_testbench 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/student/Desktop/lab07/CCSiMP32a_CCSiMP32a_sch_tb_isim_beh.exe -prj /home/student/Desktop/lab07/CCSiMP32a_CCSiMP32a_sch_tb_beh.prj work.CCSiMP32a_CCSiMP32a_sch_tb 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 1
 Turning on mult-threading, number of parallel sub-compilation jobs: 0 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/student/Desktop/lab07/shift_2.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ROM.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/REG.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/RAM.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/PC.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/MUX5.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/MUX32.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/FSM.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/EXT.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/DEC.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ALU.vhd" into library work
 Parsing VHDL file "/home/student/Desktop/lab07/ADD2.vhd" into library work
-Parsing VHDL file "/home/student/Desktop/lab07/ADD2_testbench.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ADD1.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/ACU.vhd" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/CCSiMP32a.vhf" into library work
+Parsing VHDL file "/home/student/Desktop/lab07/CCSiMP32a_testbench.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 38700 KB
-Fuse CPU Usage: 1180 ms
+Fuse Memory Usage: 46888 KB
+Fuse CPU Usage: 1290 ms
 Compiling package standard
 Compiling package std_logic_1164
+Compiling package vcomponents
 Compiling package numeric_std
+Compiling package textio
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
+Compiling architecture fsm_arch of entity FSM [fsm_default]
+Compiling architecture behavioral of entity ADD1 [add1_default]
+Compiling architecture behavioral of entity ROM [rom_default]
+Compiling architecture behavioral of entity PC [pc_default]
 Compiling architecture behavioral of entity ADD2 [add2_default]
-Compiling architecture behavior of entity add2_testbench
+Compiling architecture behavioral of entity DEC [dec_default]
+Compiling architecture behavioral of entity MUX32 [mux32_default]
+Compiling architecture behavioral of entity RAM [ram_default]
+Compiling architecture behavioral of entity REG [reg_default]
+Compiling architecture behavioral of entity ALU [alu_default]
+Compiling architecture behavioral of entity ACU [acu_default]
+Compiling architecture behavioral of entity EXT [ext_default]
+Compiling architecture behavioral of entity MUX5 [mux5_default]
+Compiling architecture and3_v of entity AND3 [and3_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture inv_v of entity INV [inv_default]
+Compiling architecture behavioral of entity shift_2 [shift_2_default]
+Compiling architecture behavioral of entity CCSiMP32a [ccsimp32a_default]
+Compiling architecture behavioral of entity ccsimp32a_ccsimp32a_sch_tb
 Time Resolution for simulation is 1ps.
-Compiled 8 VHDL Units
-Built simulation executable /home/student/Desktop/lab07/ADD2_testbench_isim_beh.exe
-Fuse Memory Usage: 55724 KB
-Fuse CPU Usage: 1310 ms
-GCC CPU Usage: 2700 ms
+Compiled 44 VHDL Units
+Built simulation executable /home/student/Desktop/lab07/CCSiMP32a_CCSiMP32a_sch_tb_isim_beh.exe
+Fuse Memory Usage: 67664 KB
+Fuse CPU Usage: 1460 ms
+GCC CPU Usage: 710 ms

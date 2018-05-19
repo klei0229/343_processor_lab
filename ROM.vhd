@@ -39,31 +39,34 @@ end ROM;
 architecture Behavioral of ROM is
 	type rom_type is array (0 to 255) of STD_LOGIC_VECTOR(7 downto 0);
 	
-impure function init_buf(FileName : in string) return rom_type is
-	constant LINE_NUM : integer := 10;
-	file fp: text;
-	variable temp_mem : rom_type := (others => x"00");
-	variable line_cache : line;
-	variable word_cache : bit_vector (31 downto 0) := x"00000000";
-begin 
-	file_open(fp, FileName, read_mode);
-	for i in 0 to LINE_NUM loop
-		if endfile(fp) then
-			exit;
-		else
-			readline(fp, line_cache);
-			read(line_cache, word_cache);
-			temp_mem((i*4)+3) := to_stdlogicvector(word_cache(31 downto 24));
-			temp_mem((i*4)+2) := to_stdlogicvector(word_cache(23 downto 16));
-			temp_mem((i*4)+1) := to_stdlogicvector(word_cache(15 downto 8));
-			temp_mem(i*4) := to_stdlogicvector(word_cache(7 downto 0));
-		end if;
-	end loop;
-	file_close(fp);
-	return temp_mem;
-end function;
+impure function init_buf(rom_file_string : in string) return rom_type is
+		file fp : text;
+		variable rom_input_line : line;
+		variable rom_bitvector : bit_vector(31 downto 0);
+		variable rom_mem : rom_type;
+		variable i : integer := 0;
+	begin
+		rom_mem := (others => x"00");
+		file_open(fp, rom_file_string, read_mode);
+		while not endfile(fp) loop
+			-- this reads a single line from rom file place the value into line type var called rom_input_line
+			readline(fp, rom_input_line);
+			--from the line, retrieve the string 
+			read(rom_input_line, rom_bitvector);
+			rom_mem(i)		:= to_stdlogicvector(rom_bitvector(7 downto 0));
+			rom_mem(i+1)	:= to_stdlogicvector(rom_bitvector(15 downto 8));
+			rom_mem(i+2)	:= to_stdlogicvector(rom_bitvector(23 downto 16));
+			rom_mem(i+3)	:= to_stdlogicvector(rom_bitvector(31 downto 24));
+			i := i + 4;
+			if i >= 256 then
+				exit;
+			end if;
+		end loop;
+		file_close(fp);
+		return rom_mem;
+	end function;
 
-signal rom: rom_type := init_buf("ROM_init.txt");
+signal rom: rom_type := init_buf("Fibonacci.bin");
 begin
 	process(I_ROM_EN,I_ROM_ADDR,rom)
 	variable i : integer;

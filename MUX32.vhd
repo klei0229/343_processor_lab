@@ -38,16 +38,10 @@ end MUX32;
 
 architecture Behavioral of MUX32 is
 begin
-	process(I_MUX_Sel)
-	begin 
-	-- When I_MUX_SEL is 0 then I_MUX_OUT = O_MUX_0
-		if I_MUX_Sel = '0' then O_MUX_Out <= I_MUX_0;
-	-- When I_MUX_SEL is 1 then I_MUX_OUT = O_MUX_1
-		elsif I_MUX_Sel = '1' then O_MUX_Out <= I_MUX_1;
-		
-		end if;
-		
 	
-	end process;
+	-- When I_MUX_SEL is 0 then I_MUX_OUT = O_MUX_0
+	 O_MUX_Out <= I_MUX_0 when I_MUX_Sel = '0' else I_MUX_1;
+	
+	
 end Behavioral;
 

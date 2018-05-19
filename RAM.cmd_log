@@ -1,0 +1,2 @@
+vhdtdtfi -lib work RAM.vhd -prj lab07 -o RAM.spl -module RAM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w RAM.spl /home/student/Desktop/lab07/RAM.sym 

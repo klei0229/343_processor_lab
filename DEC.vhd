@@ -130,7 +130,7 @@ begin
 		O_DEC_RegWrite <= '0';
 
 	--addiu
-		elsif  I_DEC_Opcode = "001001" then 
+		elsif  I_DEC_Opcode = "001001" or I_DEC_Opcode = "001000" then 
 		O_DEC_RegDst <= '0';
 		O_DEC_Jump <= '0';
 		O_DEC_Beq <= '0';

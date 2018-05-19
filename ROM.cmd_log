@@ -1,0 +1,8 @@
+vhdtdtfi -lib work ROM.vhd -prj lab07 -o ROM.spl -module ROM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w ROM.spl /home/student/Desktop/lab07/ROM.sym 
+vhdtdtfi -lib work ROM.vhd -prj lab07 -o ROM.spl -module ROM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w ROM.spl /home/student/Desktop/lab07/ROM.sym 
+vhdtdtfi -lib work ROM.vhd -prj lab07 -o ROM.spl -module ROM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w ROM.spl /home/student/Desktop/lab07/ROM.sym 
+vhdtdtfi -lib work ROM.vhd -prj lab07 -o ROM.spl -module ROM -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 -w ROM.spl /home/student/Desktop/lab07/ROM.sym 

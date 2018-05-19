@@ -68,7 +68,9 @@ begin
 	return temp_mem;
 end function;
 
-signal ram: ram_type := init_buf("RAM_init.txt");
+--signal ram: ram_type := init_buf("RAM_init.txt");
+signal ram: ram_type := (others => x"00");
+
 begin
 	process(I_RAM_EN,I_RAM_RE,I_RAM_WE,I_RAM_ADDR,I_RAM_DATA,ram)
 	variable i : integer;
